@@ -1,7 +1,3 @@
-﻿// #r @"/Users/krzkik/.nuget/packages/awssdk.core/3.5.1.32/lib/netcoreapp3.1/AWSSDK.Core.dll";;
-// #r @"/Users/krzkik/.nuget/packages/awssdk.cloudwatch/3.5.0.34/lib/netcoreapp3.1/AWSSDK.CloudWatch.dll";;
-// #r @"/Users/krzkik/.nuget/packages/awssdk.rds/3.5.4.7/lib/netcoreapp3.1/AWSSDK.RDS.dll";;
-
 open System
 open System.IO
 open System.Collections.Generic
@@ -43,7 +39,6 @@ let getRDSCPUMetrics (region:RegionEndpoint) period days dbid =
   
 [<EntryPoint>]
 let main argv =
-  printfn "(c) 2020 Syncron AWS Cost Reporting"
 
   let periods = Period(None)
 
